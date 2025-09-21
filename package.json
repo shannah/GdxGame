@@ -1,0 +1,31 @@
+{
+  "bin": {"gdxgame": "jdeploy-bundle/jdeploy.js"},
+  "author": "GdxGame Contributors",
+  "description": "A 2D RPG game built with LibGDX, based on BludBourne",
+  "main": "index.js",
+  "preferGlobal": true,
+  "repository": "https://github.com/shannah/GdxGame",
+  "version": "2.6.1",
+  "jdeploy": {
+    "jdk": false,
+    "javaVersion": "17",
+    "jar": "desktop/build/libs/desktop-2.6.1.jar",
+    "javafx": false,
+    "title": "GdxGame - 2D RPG",
+    "buildCommand": [
+      "./gradlew",
+      ":desktop:buildExecutableJar"
+    ]
+  },
+  "dependencies": {
+    "command-exists-promise": "^2.0.2",
+    "node-fetch": "2.6.7",
+    "tar": "^4.4.8",
+    "yauzl": "^2.10.0",
+    "shelljs": "^0.8.4"
+  },
+  "license": "ISC",
+  "name": "gdxgame",
+  "files": ["jdeploy-bundle"],
+  "scripts": {"test": "echo \"Error: no test specified\" && exit 1"}
+}

@@ -34,3 +34,7 @@ nbdist/
 .vscode/*
 .history
 bin/
+
+### jDeploy ###
+jdeploy-bundle/
+node_modules/
